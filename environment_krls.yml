@@ -1,0 +1,26 @@
+# Optional KRLS environment for Soft Regression Trees for Dissimilarity Data
+# (paper Section 5.4); use instead of environment.yml, not in addition to it.
+# The RLScore Git commit matches the authors' pip freeze, not the latest release.
+# RLScore builds compiled extensions; Git and a working C/C++ toolchain are required.
+# R/randomForest and Colab notebook dependencies are separate.
+name: dsrt-krls
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.11
+  - numpy=2.1.2
+  - scipy=1.15.3
+  - numba=0.61.2
+  - scikit-learn=1.6.1
+  - pandas=2.2.3
+  - cython=3.1.1
+  - pip=25.1
+  - setuptools=78.1.1
+  - wheel
+  - git
+  - pip:
+      - kmedoids==0.5.4
+      - gower==0.1.2
+      - logger==1.4
+      - rlscore @ git+https://github.com/aatapa/RLScore.git@d3970ccce9affd715cd128188dbaebcbe07428ab

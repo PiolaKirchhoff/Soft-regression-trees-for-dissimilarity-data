@@ -1,0 +1,23 @@
+# Core DSRT environment for Soft Regression Trees for Dissimilarity Data.
+# Package versions are taken from the authors' working Conda environment.
+# KRLS/RLScore, the R/randomForest benchmarks and Colab dataset generation
+# are deliberately excluded; see README.md and docs/dataset_generation.md.
+name: dsrt
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.11
+  - numpy=2.1.2
+  - scipy=1.15.3
+  - numba=0.61.2
+  - scikit-learn=1.6.1
+  - pandas=2.2.3
+  - cython=3.1.1
+  - pip=25.1
+  - setuptools=78.1.1
+  - wheel
+  - pip:
+      - kmedoids==0.5.4
+      - gower==0.1.2
+      - logger==1.4
