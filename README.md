@@ -89,7 +89,7 @@ Run the following commands from the **repository root**, after activating the re
 | Functional DSRT | `python experiments_functional_dsrt.py lbfgs 0 0` | Depth 2; default dataset `energy` |
 | Tabular Random Forest | `python experiments_tabular_rf.py` | Requires R, `rpy2` and `randomForest` |
 | Functional Random Forest | `python experiments_functional_rf.py` | Requires R, `rpy2` and `randomForest` |
-| KRLS B (new drugs) | `python experiments_krls_bc.py DT lbfgs 0 0 1` | `setting_B=True`; drug-routed tree |
+| KRLS B (new drugs) | `python experiments_krls_bc.py DT lbfgs 0 0 0` | `setting_B=True`; drug-routed tree |
 | KRLS C (new targets) | Same command after `setting_B=False` | Target-routed tree, transposed response matrix |
 | KRLS D (new drugs and targets) | `python experiments_krls_d.py` | Two routed trees; equal-weight averaged predictions |
 
