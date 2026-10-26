@@ -18,15 +18,15 @@ Research code and datasets accompanying *Soft Regression Trees for Dissimilarity
 ├── nystrom_utils_2.py              # Prototype selection
 ├── util_gower.py                    # Tabular dissimilarities
 ├── dti_eval_metrics.py             # Davis evaluation metrics
-├── esperimenti_no_sparsity_tabular.py
-├── esperimenti_sparsity_tabular.py
+├── experiments_no_sparsity_tabular.py
+├── experiments_sparsity_tabular.py
 ├── experiments_tabular_rf.py
 ├── experiments_functional_dsrt.py
 ├── experiments_functional_rf.py
 ├── experiments_krls_bc.py
 ├── experiments_krls_d.py
 ├── notebooks/
-│   └── dataset_generation/         # Previously: "dataset generation"
+│   └── dataset generation/         # Previously: "dataset generation"
 ├── generated_datasets/            # Previously: "generated datasets"; original notebook outputs
 ├── data/
 │   ├── functional/                 # Experiment-ready, flat CSV layout (see below)
