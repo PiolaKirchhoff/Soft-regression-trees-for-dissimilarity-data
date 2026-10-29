@@ -84,8 +84,8 @@ Run the following commands from the **repository root**, after activating the re
 
 | Experiment | Command | Notes |
 |---|---|---|
-| Tabular DSRT, full working set | `python esperimenti_no_sparsity_tabular.py lbfgs 0 0` | Five folds; ten initializations per fold |
-| Tabular DSRT, prototype selection | `python esperimenti_sparsity_tabular.py lbfgs 0 0` | k-medoids (`kmediod`) or uniform selection; percentage configured in the script |
+| Tabular DSRT, full working set | `python experiments_no_sparsity_tabular.py lbfgs 0 0` | Five folds; ten initializations per fold |
+| Tabular DSRT, prototype selection | `python experiments_sparsity_tabular.py lbfgs 0 0` | k-medoids (`kmediod`) or uniform selection; percentage configured in the script |
 | Functional DSRT | `python experiments_functional_dsrt.py lbfgs 0 0` | Depth 2; default dataset `energy` |
 | Tabular Random Forest | `python experiments_tabular_rf.py` | Requires R, `rpy2` and `randomForest` |
 | Functional Random Forest | `python experiments_functional_rf.py` | Requires R, `rpy2` and `randomForest` |
